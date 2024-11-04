@@ -1,0 +1,39 @@
+body { 
+    background: #2B2621;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+}
+
+main {
+    padding: 3em 20em 3em 20em;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex; /* Maakt de <ul> een flex-container */
+    gap: 1em; /* Ruimte tussen de items */
+    overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
+    scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+    width: 100%;
+}
+
+li {
+	flex-shrink:0;
+	scroll-snap-align: center; /* Stelt het item in op centreren bij het scrollen */
+    min-width: 150px;
+}
+
+img {
+    display:block; /* Verwijdert de extra ruimte rondom afbeeldingen */
+    align-items: center;
+}
+
