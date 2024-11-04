@@ -1,8 +1,11 @@
 body { 
     background: #2B2621;
-}
+} 
 
 h1 {
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     text-transform: uppercase;
 }
@@ -12,7 +15,7 @@ h2 {
 }
 
 main {
-    padding: 3em 21em 3em 21em;
+    padding: 3em 22em 3em 22em;
 }
 
 ul {
