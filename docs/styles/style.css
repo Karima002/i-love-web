@@ -1,42 +1,56 @@
 body { 
-    background: #2B2621;
+    background: #2B2621;  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
 } 
 
 h1 {
     font-family: "myriad-pro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    text-transform: uppercase;
+    font-weight: 400; /* Stelt het lettertypegewicht in op normaal (400) */
+    font-style: normal;  /* Zet de tekststijl op normaal */
+    color: white; /* Zet de kleur van de tekst op wit */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
 }
 
 h2 {
-    color: white;
+    color: white; /* Zet de kleur van de tekst op wit */
 }
 
 main {
-    padding: 3em 22em 3em 22em;
+    padding: 3em 22em 3em 22em; /* Zet de padding rondom de main, beginnend met top */
+    @media (max-width: 725px) { /* Voor schermen die maximaal 725px zijn wordt de onderstaande regel uitgevoerd */
+        padding: 3em 5em 2em 5em; /* Pas de padding aan voor kleinere schermen */
+    }
 }
 
 ul {
-    padding: 0;
-    list-style-type: none;
+    padding: 0; /* Verwijdert de standaard padding van de <ul> */
+    list-style-type: none; /* Verwijdert de standaard opsommingstekens */
     display: flex; /* Maakt de <ul> een flex-container */
     gap: 1em; /* Ruimte tussen de items */
     overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
-    scroll-snap-type: x mandatory;
-	overscroll-behavior-x: contain;
-    width: 100%;
+    scroll-snap-type: x mandatory; /* Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
+	overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
+    width: 100%; /* Zet de breedte van de <ul> op 100% */
 }
 
 li {
-	flex-shrink:0;
+	flex-shrink:0; /* Voorkomt dat het <li>-element krimpt bij weinig ruimte */
 	scroll-snap-align: center; /* Stelt het item in op centreren bij het scrollen */
-    min-width: 150px;
+    min-width: 150px; /* Stelt de minimale breedte van elk <li>-element in */
+
 }
 
 img {
     display:block; /* Verwijdert de extra ruimte rondom afbeeldingen */
-    align-items: center;
+    align-items: center; /* Centreert de afbeelding binnen zijn container */
 }
 
+a {
+    color: #fff; /* Zet de kleur van de tekst op wit */
+    font-family: 'Gabriola', sans-serif; /* Gebruikt Gabriola als lettertype */
+    letter-spacing: 1.5px; /* Zet de afstand tussen letters op 1.5px */
+    font-size: 1.4rem; /* Stelt de lettergrootte in */
+    font-weight: 600; /* Maakt de tekst bold */
+    margin-top: 2em; /* Zet een marge boven de link */
+    text-decoration: none;  /* Verwijdert de onderstreping van de link */
+    cursor: pointer;/* Verandert de cursor naar een handje */
+}
