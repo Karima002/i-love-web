@@ -20,7 +20,7 @@ main {
 
 h2 {
     font-family: "myriad-pro", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 400;
     padding-left: .8em;
@@ -31,10 +31,11 @@ h2 {
 
 .kopregel {
     grid-column: 1/2;
+    padding-top: 2.5em;
     padding-left: 1em;
     color: white;
     font-family: "myriad-pro", sans-serif;
-
+    font-weight: 800;
 }
 
 .paragraaf {
