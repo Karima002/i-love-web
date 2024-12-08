@@ -49,3 +49,9 @@ h2 {
 li {
     color: white;
 }
+
+h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    font-style: italic;
+}
