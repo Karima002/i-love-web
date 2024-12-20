@@ -57,3 +57,39 @@ a {
     text-decoration: none;  /* Verwijdert de onderstreping van de link */
     cursor: pointer;/* Verandert de cursor naar een handje */
 }
+
+/* MARK: VIEW TRANSITION*/
+
+@view-transition{
+    navigation: auto;
+}
+
+@keyframes move-out {
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-30%)
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-in {
+    0% {
+        transform: translateX(100%);
+    }
+    30% {
+        transform: translateX(30%)
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
