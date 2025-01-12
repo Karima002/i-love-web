@@ -18,9 +18,12 @@ h2 {
 }
 
 main {
-    padding: 3em 22em 3em 22em; /* Zet de padding rondom de main, beginnend met top */
-    @media (max-width: 725px) { /* Voor schermen die maximaal 725px zijn wordt de onderstaande regel uitgevoerd */
+    padding: 2em 1em 0 1em;
+    @media (min-width: 600px) { /* Voor schermen die maximaal 725px zijn wordt de onderstaande regel uitgevoerd */
         padding: 3em 5em 2em 5em; /* Pas de padding aan voor kleinere schermen */
+    }
+    @media (min-width: 725px) {
+        padding: 3em 20em 3em 20em;
     }
 }
 
