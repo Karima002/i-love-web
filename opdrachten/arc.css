@@ -1,0 +1,40 @@
+div {
+    width: 7em;
+    height: 7em;
+    background-color: darkblue;
+    margin-top: 1em;
+}
+
+button {
+    cursor: pointer;
+}
+
+.transformarc {
+    animation-name: arc;
+    animation-timing-function: cubic-bezier(.23,.61,.61,.76);
+    animation-duration: 1.5s;
+}
+
+@keyframes arc {
+    0% {
+      transform: translateY(5rem) translateX(1rem);
+    }
+    10% {
+        transform: translateY(10rem) translateX(2rem);
+    }
+    30% {
+        transform: translateY(15rem) translateX(5rem) rotate(260deg);
+    }
+    50% {
+        transform: translateY(20rem);
+    }
+    57% {
+        transform: translateY(25rem);
+    }
+    64% {
+        transform: translateY(30rem);
+    }
+    100% {
+        transform: translateY(35rem);
+    }
+  }
