@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fff;
+
+}
+body { 
+    background: #2B2621;  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
+} 
+
+h1 {
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400; /* Stelt het lettertypegewicht in op normaal (400) */
+    font-style: normal;  /* Zet de tekststijl op normaal */
+    color: white; /* Zet de kleur van de tekst op wit */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    text-align: center;
+    padding: 1em;
+}
+
+h2 {
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+    padding: 1em 0 .3em 1em;
+    grid-column: 1/2
+}
+
+p {
+    grid-column: 1/2;
+    padding-left: 1.7em;
+    padding-bottom: 1.5em;
+    color: white;
+    font-family: "myriad-pro", sans-serif;
+
+}
+
+li {
+    color: white;
+    font-family: "myriad-pro", sans-serif;
+    padding-left: 1.3em;
+
+}
+
+a {
+    color: var(--text-color);
+    padding: 1em 0 .3em 1em;
+    text-decoration: none;
+}
+
