@@ -74,14 +74,15 @@ main {
 }
 
 ul {
-    padding: 0; /* Verwijdert de standaard padding van de <ul> */
-    list-style-type: none; /* Verwijdert de standaard opsommingstekens */
-    display: flex; /* Maakt de <ul> een flex-container */
-    gap: 1em; /* Ruimte tussen de items */
+    padding: 0; 
+    list-style-type: none; 
+    display: flex; 
+    gap: 1em; 
     overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
-    scroll-snap-type: x mandatory; /* Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
-	overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
-    width: 100%; /* Zet de breedte van de <ul> op 100% */
+    /*scroll-snap-type: x mandatory; Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
+	scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
+    width: 100%; 
 }
 
 li {
