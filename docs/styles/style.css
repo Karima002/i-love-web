@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #fff;
+    --background-color: #2B2621;
+}
+
 body { 
-    background: #2B2621;  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
+    background: var(--background-color);  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
 } 
+
 
 div {
     display: flex;
@@ -25,13 +31,14 @@ div {
     cursor: pointer;
     padding: 1em 0 1em 1em;
 }
+
 h1 {
     font-family: "myriad-pro", sans-serif;
     font-size: 2.3rem;
-    font-weight: 400; /* Stelt het lettertypegewicht in op normaal (400) */
+    font-weight: 400; 
     font-style: normal;  /* Zet de tekststijl op normaal */
-    color: white; /* Zet de kleur van de tekst op wit */
-    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    color: white; 
+    text-transform: uppercase; 
     text-align: center;
     padding: .5em 2em .5em 0;
     flex-grow: 1;
@@ -80,7 +87,7 @@ ul {
     gap: 1em; 
     overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
     /*scroll-snap-type: x mandatory; Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
-	scroll-snap-type: x proximity;
+	scroll-snap-type: x proximity; /*geeft meer vrijheid dan mandatory. De carousel sprint ook naar een snap-punt, maar alleen als je stopt met scrollen en dicht genoeg bij zo'n punt bent.*/
     overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
     width: 100%; 
 }
@@ -98,14 +105,14 @@ img {
 }
 
 a {
-    color: #fff; /* Zet de kleur van de tekst op wit */
-    font-family: 'Gabriola', sans-serif; /* Gebruikt Gabriola als lettertype */
-    letter-spacing: 1.5px; /* Zet de afstand tussen letters op 1.5px */
-    font-size: 1.4rem; /* Stelt de lettergrootte in */
-    font-weight: 600; /* Maakt de tekst bold */
-    margin-top: 2em; /* Zet een marge boven de link */
-    text-decoration: none;  /* Verwijdert de onderstreping van de link */
-    cursor: pointer;/* Verandert de cursor naar een handje */
+    color: #fff; 
+    font-family: 'Gabriola', sans-serif; 
+    letter-spacing: 1.5px; 
+    font-size: 1.4rem;
+    font-weight: 600; 
+    margin-top: 2em; 
+    text-decoration: none;  
+    cursor: pointer;
 }
 
 /* MARK: VIEW TRANSITION*/

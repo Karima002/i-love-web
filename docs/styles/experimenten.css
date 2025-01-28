@@ -6,11 +6,55 @@
 
 :root {
     --text-color: #fff;
-
+    --background-color: #2B2621;
 }
+
 body { 
-    background: #2B2621;  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
+    background: var(--background-color);  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
 } 
+
+
+div {
+    display: flex;
+    background-color: none;
+}
+
+.button-open-menu {
+    all: unset;
+    padding-left: .5em;
+    cursor: pointer;
+}
+
+.button-sluit-menu {
+    all: unset;
+    padding-left: .5em;
+    cursor: pointer;
+    padding: 1em 0 1em 1em;
+}
+
+
+nav {
+    position: fixed;
+    left:0; /*navigatiebar beslaat gehele scherm*/
+    right: 70em;
+    top:0;
+    bottom:0;
+    translate:-100% 0%; /*de navigatiebar uit beeld schuiven met translate. De nav beweegt zijn eigen breedte 100% naar links.*/
+    transition: translate .4s; /*Menu komt binnen .3sec in beeld*/
+    background-color: #2B2621;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 0 1.5em;
+}
+
+
+nav.toonMenu { /* als menu open is */
+    translate: 0% 0%;
+}
+
 
 h1 {
     font-family: "myriad-pro", sans-serif;
