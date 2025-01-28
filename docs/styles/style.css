@@ -9,11 +9,22 @@ body {
 } 
 
 div {
-    height: 79px;
-    width: 93px;
-    color: #fff;
+    display: flex;
+    background-color: none;
 }
 
+.button-open-menu {
+    all: unset;
+    padding-left: .5em;
+    cursor: pointer;
+}
+
+.button-sluit-menu {
+    all: unset;
+    padding-left: .5em;
+    cursor: pointer;
+    padding: 1em 0 1em 1em;
+}
 h1 {
     font-family: "myriad-pro", sans-serif;
     font-size: 2.3rem;
@@ -22,8 +33,31 @@ h1 {
     color: white; /* Zet de kleur van de tekst op wit */
     text-transform: uppercase; /* Zet de tekst in hoofdletters om */
     text-align: center;
-    padding: .5em .3em .5em 0;
+    padding: .5em 2em .5em 0;
+    flex-grow: 1;
 }
+
+nav {
+    position: fixed;
+    left:0; /*navigatiebar beslaat gehele scherm*/
+    right: 70em;
+    top:0;
+    bottom:0;
+    translate:-100% 0%; /*de navigatiebar uit beeld schuiven met translate. De nav beweegt zijn eigen breedte 100% naar links.*/
+    transition: translate .4s; /*Menu komt binnen .3sec in beeld*/
+    background-color: #2B2621;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 0 1.5em;
+}
+
+
+nav.toonMenu { /* als menu open is */
+    translate: 0% 0%;
+  }
 
 h2 {
     color: white; /* Zet de kleur van de tekst op wit */
