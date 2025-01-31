@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: black;
+    --background-color: #fff;
+}
+
+body {
+    background: var(--background-color);  /* Zet de achtergrondkleur van de pagina op een donkerbruine tint */
+    min-height: 100vh;
+    line-height: 1.5;
+    overflow: hidden; 
+    display: grid;
+    place-content: center;
+}
+
+
+h1 {
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400; 
+    font-style: normal;  /* Zet de tekststijl op normaal */
+    color: var(--text-color); 
+    text-transform: uppercase; 
+    text-align: center;
+    flex-grow: 1;
+}
+
+img {
+    padding-left: 5em;
+}
+
+p {
+    max-width: 35rem;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes move-out {
+    from {
+      transform: translateY(0%);
+    }
+  
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes move-in {
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  ::view-transition-old(root) {
+    animation: 0.6s ease-in both move-out;
+  }
+  
+  ::view-transition-new(root) {
+    animation: 0.6s ease-in both move-in;
+  }
