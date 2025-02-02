@@ -65,6 +65,7 @@ h1 {
     text-transform: uppercase; /* Zet de tekst in hoofdletters om */
     text-align: center;
     padding: 1em;
+    animation: textease 2.2s cubic-bezier(.34,.75,.83,.67) /*disney animation: slow in and slow out */
 }
 
 h2 {
@@ -98,3 +99,12 @@ a {
     text-decoration: none;
 }
 
+/* Disney animation: slow in and slow out */
+@keyframes textease {
+    0% {
+    translate: 100%; /* Begin de tekst buiten het scherm naar rechts*/
+    }
+    100% {
+        translate: 0; /* Laat de tekst volledig naar zijn eindpositie bewegen. */
+    }
+}

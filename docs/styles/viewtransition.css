@@ -43,10 +43,11 @@ img {
     cursor: pointer;
 }
 
-a{
+a {
     font-family: "myriad-pro", sans-serif;
     text-decoration: none;
     color: var(--text-color);
+
 }
 
 @view-transition { /* Schakelt view-overgangen in voor navigatie binnen hetzelfde domein. bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition */

@@ -14,6 +14,7 @@ body {
 } 
 
 
+
 div {
     display: flex;
     background-color: none;
@@ -42,9 +43,13 @@ h1 {
     text-align: center;
     padding: .5em 2em .5em 0;
     flex-grow: 1;
+    animation: textease 2.2s cubic-bezier(.34,.75,.83,.67) /*disney animation: slow in and slow out */
 }
 
+
+
 nav {
+    
     position: fixed;
     left:0; /*navigatiebar beslaat gehele scherm*/
     right: 70em;
@@ -96,13 +101,14 @@ li {
 	flex-shrink:0; /* Voorkomt dat het <li>-element krimpt bij weinig ruimte */
 	scroll-snap-align: center; /* Stelt het item in op centreren bij het scrollen */
     min-width: 150px; /* Stelt de minimale breedte van elk <li>-element in */
-
+    
 }
 
 img {
     display:block; /* Verwijdert de extra ruimte rondom afbeeldingen */
     align-items: center; /* Centreert de afbeelding binnen zijn container */
 }
+
 
 a {
     color: #fff; 
@@ -113,40 +119,50 @@ a {
     margin-top: 2em; 
     text-decoration: none;  
     cursor: pointer;
+
 }
 
-/* MARK: VIEW TRANSITION*/
+/* Disney animation: slow in and slow out */
 
-@view-transition{
+@keyframes textease {
+    0% {
+    translate: 100%; /* Begin de tekst buiten het scherm naar rechts*/
+    }
+    100% {
+        translate: 0; /* Laat de tekst volledig naar zijn eindpositie bewegen. */
+    }
+}
+
+/* view transition */
+
+@view-transition { /* Schakelt view-overgangen in voor navigatie binnen hetzelfde domein. bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition */
     navigation: auto;
 }
 
 @keyframes move-out {
-    0% {
-        transform: translateX(0%);
+    from {
+      transform: translateY(0%);
     }
-    30% {
-        transform: translateX(-30%)
+  
+    to {
+      transform: translateY(-100%); /* Beweegt omhoog uit het zicht */
     }
-    50% {
-        transform: translateX(-50%);
+  }
+  
+  @keyframes move-in { /* Definieert de 'move-in' animatie voor het nieuwe  element */
+    from {
+      transform: translateY(100%);
     }
-    100% {
-        transform: translateX(-100%);
+  
+    to {
+      transform: translateY(0%); /* Beweeg naar de oorspronkelijke positie */
     }
-}
-
-@keyframes move-in {
-    0% {
-        transform: translateX(100%);
-    }
-    30% {
-        transform: translateX(30%)
-    }
-    50% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
+  }
+  
+  ::view-transition-old(root) {
+    animation: 0.6s ease-in both move-out; /* Animeren over 0.6 seconden met een 'ease-in' timingfunctie */
+  }
+  
+  ::view-transition-new(root) {
+    animation: 0.6s ease-in both move-in;
+  }
