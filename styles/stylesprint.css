@@ -130,4 +130,12 @@ a {
     }
   }
   
- 
+/* Pas een animatie toe op de "oude" weergave van een root-element */ 
+  ::view-transition-old(root) {
+    animation: 0.4s ease-in both move-out;
+  }
+  
+/* Pas een animatie toe op de "nieuwe" weergave van een root-element */
+  ::view-transition-new(root) {
+    animation: 0.4s ease-in both move-in;
+  }
