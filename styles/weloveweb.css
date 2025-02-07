@@ -24,6 +24,7 @@ h1 {
 
 }
 
+
 h2 {
     font-family: "myriad-pro", sans-serif;
     font-size: 1.8rem;
@@ -62,3 +63,5 @@ li {
         translate: 0; /* Laat de tekst volledig naar zijn eindpositie bewegen. */
     }
 }
+
+
