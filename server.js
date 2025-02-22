@@ -46,7 +46,40 @@ app.get('/home', async function (request, response) {
    response.render('index.liquid', {person: personResponseJSON.data}) //Aan die view wordt een object meegegeven. Met de data uit de API, zodat die gegevens ook in die view gebruikt kunnen worden. 
 })
 
-//Nieuwe route aanmaken voor oefenen.liquid
+//Nieuwe routes aanmaken voor verschillende sprints
+app.get('/sprint1', async function (request, response) {
+    response.render('sprint1.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint2', async function (request, response) {
+    response.render('sprint2.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint3', async function (request, response) {
+    response.render('sprint3.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint4', async function (request, response) {
+    response.render('sprint4.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint5', async function (request, response) {
+    response.render('sprint5.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint6', async function (request, response) {
+    response.render('sprint6.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint7', async function (request, response) {
+    response.render('sprint7.liquid', {person: personResponseJSON.data}) 
+ })
+
+ app.get('/sprint8', async function (request, response) {
+    response.render('sprint8.liquid', {person: personResponseJSON.data}) 
+ })
+
+
 
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
 // Maak daar dan meer Routes voor aan, en koppel ze aan Views
