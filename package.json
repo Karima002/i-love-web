@@ -1,0 +1,29 @@
+{
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "\"Learning journal, blog, digital gardening\"",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karima002/i-love-web.git"
+  },
+  "keywords": [
+    "\"node\"",
+    "\"express\"",
+    "\"liquidjs\"",
+    "\"i-love-web\""
+  ],
+  "author": "\"Karima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karima002/i-love-web/issues"
+  },
+  "homepage": "https://github.com/Karima002/i-love-web#readme"
+}
