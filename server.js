@@ -18,10 +18,6 @@ const personResponseJSON = await personResponse.json()
 personResponseJSON.data.custom = JSON.parse(personResponseJSON.data.custom); // ervoor te zorgen dat de gegevens in personResponseJSON.data.custom (string) in een JSON-object worden omgezet
 
 
-// Controleer eventueel de data in je console
-// (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
-// console.log(personResponseJSON)
-
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
@@ -41,7 +37,7 @@ app.set('views', './views')
 // Om Views weer te geven, heb je Routes nodig
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 // In je visitekaartje was dit waarschijnlijk index.html
-app.get('/home', async function (request, response) {
+app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
    response.render('index.liquid', {person: personResponseJSON.data}) //Aan die view wordt een object meegegeven. Met de data uit de API, zodat die gegevens ook in die view gebruikt kunnen worden. 
 })
@@ -80,13 +76,6 @@ app.get('/sprint1', async function (request, response) {
  })
 
 
-
-// Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
-// Maak daar dan meer Routes voor aan, en koppel ze aan Views
-// app.get('/contact', function (request, response) {
-   // Render bijvoorbeeld contact.liquid uit de views map, zonder daar iets aan mee te geven
-   // response.render('contact.liquid')
-// })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
 // Hier doen we nu nog niets mee, maar je kunt er mee spelen als je wilt
