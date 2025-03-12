@@ -45,6 +45,31 @@
                 </video>
             </article>
 
+            <article>
+                <h3>12 maart 2025</h3>
+                    <h4>Data filteren en template filters</h4>
+                    <h5>👉 Experiment 1: Ik wil alle studenten gesorteerd op name       </h4>
+                    <p class="paragraaf">https://fdnd.directus.app/items/person?fields=name&sort=name</p>
+
+                    <br> 
+
+                    <h5>👉 Experiment 2: Ik wil alle names van studenten die een name hebben die begint met de letter                    </h4>
+                    <p class="paragraaf">https://fdnd.directus.app/items/person?fields=name&filter[name][_starts_with]=D</p>
+                    
+                    <br> 
+
+                    <h5>👉 Experiment 3: Ik wil alle names van studenten die een name hebben die begint met de letter D of K</h4>
+                    <p class="paragraaf">https://fdnd.directus.app/items/person?fields=name&filter[_or][0][name][_starts_with]=D&filter[_or][1][name][_starts_with]=k</p>
+                    
+                    <br> 
+
+                    <hr>
+                    <h4>Template filters in Liquid</h4>
+                    <h5> Experiment 3: Ik wil mijn lijst omgekeerd weergeven</h4>
+                    {% assign cities = "Amsterdam, Almere, Arnhem, Amstelveen" | split: ", " %}
+                    {{ cities | reverse | join: ", " }}
+
+              </article> 
 
             <!--
             <article>
