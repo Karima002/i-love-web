@@ -75,8 +75,13 @@ app.get('/sprint1', async function (request, response) {
     response.render('sprint8.liquid', {person: personResponseJSON.data}) 
  })
 
+ app.get('/experimenten', async function (request, response) {
+   response.render('experimenten.liquid', {person: personResponseJSON.data}) 
+})
 
-
+app.get('/core', async function (request, response) {
+   response.render('core.liquid', {person: personResponseJSON.data}) 
+})
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
 // Hier doen we nu nog niets mee, maar je kunt er mee spelen als je wilt
 app.post('/', async function (request, response) {
