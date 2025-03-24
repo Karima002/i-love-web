@@ -17,3 +17,31 @@ h6 {
         color: transparent;
     }
 }
+
+section {
+    all: initial;
+    display: grid;
+    place-content: center;
+    margin-bottom: 4em;
+  }
+
+  
+button {
+    padding: 1em;
+    width: 1em;
+    all: initial;
+    cursor: pointer;
+    border-radius: 70%;
+    background: #050542;
+    color: #A675F5;
+    display: grid;
+    place-content: center;
+
+  }
+  
+  button[hidden] {
+    display: none;
+  }
+  
+ 
+  
