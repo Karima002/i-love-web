@@ -1,0 +1,1 @@
+Voor vandaag stond er een sprint review op de planning. De feedback van de opdrachtgever staat in deze issue: https://github.com/Karima002/fix-the-flow-interactive-website-/issues/13
