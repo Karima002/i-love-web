@@ -1,5 +1,6 @@
 {
   "name": "i-love-web",
+  "type": "module",
   "version": "1.0.0",
   "description": "Learning journal, blog, digital gardening",
   "main": "server.js",
@@ -25,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/Karima002/i-love-web/issues"
   },
-  "homepage": "https://github.com/Karima002/i-love-web#readme"
+  "homepage": "https://github.com/Karima002/i-love-web#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0"
+  }
 }
