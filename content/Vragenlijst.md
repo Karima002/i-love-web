@@ -1,60 +1,50 @@
 __1. Ik kan uitleggen wat NodeJS is en waarvoor het gebruikt wordt__
 - 1pnt
-- NodeJS wordt gebruikt voor backend-ontwikkeling, API's en het bouwen van webservers.
 
 __2. Ik weet wat het doel van package.json is en heb hier aanpassingen ingemaakt__
-- 3pnt. Ik heb een eigen package.json gemaakt in mijn i-love-web.
+- 1pnt. 
 
 __3. Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js__
-- 2 pnt naast npm install en npm init gebruikt. Geen npm packages gebruikt, maar weet wel dat het de eerste regel is in de server.js.
+- 2 pnt 
 
 __4. Ik kan met commando’s in de terminal een NodeJS project stoppen en starten__
 
-- 3pnt
-- ctrl + c nieuwe line
-- pijl omhoog geschiedenis comondo’s
-- [|] voor het verwijderen van andere geopende terminals
+- 2pnt
+- 
   
 __5. Ik weet waarom ik mijn NodeJS project regelmatig moet herstarten en kan dit uitleggen__
-
-- 2pnt:De Server.JS wordt 1 keer geladen. Als je daar iets aanpast ziet de NodeJS het niet pas na herstarting.
+- 1pnt
 
 __6. Ik heb een strategie voor debuggen in NodeJS__
-- 1pnt Ik gebruik console.log en inspector voor debugging
+- 1pnt 
 
 __7. Ik kan uitleggen wat Express.js doet en waarom het nodig is om met NodeJS een website te bouwen__
-- 1pnt: Express.js is een framework voor Node.js dat het makkelijker maakt om webservers en API's te bouwen.
+- 1pnt: 
 
 __8. Ik weet wat routes zijn en kan zelf een nieuwe route aanmaken__
-- 2pnt
+- 1pnt
 
 __9. Ik weet wat request en response argumenten zijn ineen functie voor het laden van data__
 
 - 1pnt
-- req (request) bevat gegevens van de client, zoals URL-parameters en formdata.
-- res (response) bepaalt wat de server terugstuurt naar de client.
-
 
 __10. Ik heb gebruik gemaakt van een request parameter om specifieke data te laden__
-- 2pnt
+- 1pnt
 
 __11. Ik kan uitleggen wat Liquid doet en waarom het nodig is om met Express.js een website te maken__
 - 2pnt
-- Liquid heb je nodig om dynamische HTML kunt genereren binnen Express.js
 
 __13. Ik weet hoe ik data naar Liquid verstuur om dit te gebruiken bij het renderen van een pagina__
 - 2pnt
-- Hiervoor gebruiken we  response.render("index.liquid", 
 
 __14. Ik weet hoe ik Liquid filters toe kan passen en waar ik kan vinden hoe die werken__
 - 2pnt
   
 __15. Ik heb een nieuwe route gemaakt en nieuwe data meegegeven aan een Liquid view__
-- 2pnt
+- 1pnt
 
 __16. Ik weet waar een foreach loop voor gebruikt wordt en pas het toe in een Liquid view omHTML te renderen__
-- 2pnt
-- Hiermee kun je een lijst dynamisch weergeven in HTML.
+- 1pnt
 
 
 __17. Ik kan in Liquid een controle maken waarmee de avatar niet getoond wordt als deze niet in whois.fdnd.nl is ingevuld__
@@ -82,8 +72,6 @@ __24. Ik weet wat het doel is van een try/catch block en kan het gebruiken bij h
 
 __25. Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten__
 - 1pnt
--  Client-side: draait in de browser 
-- Server-side: draait in Node.js
 
 __26. Ik kan formulier data die is ge-POST opslaan ineen variabele op de server en gebruiken bij het renderen van een pagina__
 - 0pt
