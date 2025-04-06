@@ -3,10 +3,17 @@
 import express from 'express'
 
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
-import { Liquid } from 'liquidjs';
+import { Liquid } from 'liquidjs'
 
+import { marked } from 'marked'
 
+// zodat we bestanden en mappen kunnen inlezen. 
+import { readdir, readFile } from 'node:fs/promises'
 
+//bij het starten van de server willen we alle bestanden in de markdown (content) inlezen. Voorheen deden we het met fetch nu gaat het lokaal
+const files = await readdir('content')
+
+console.log(files)
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
@@ -64,6 +71,18 @@ app.get('/sprint1', async function (request, response) {
     response.render('sprint8.liquid') 
  })
 
+ app.get('/sprint9', async function (request, response) {
+   response.render('sprint9.liquid', {files: files}) 
+})
+
+app.get('/sprint9/:slug', async function (request, response) {
+   const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' }) //je maakt een variable aan. Je pakt de file met de slg die je op regel 76 hebt aangegeven. Achter elke bestand heb je .md en daarom geef je dit ook hier mee
+   const opgemaakt = marked.parse(fileContents) //  content wordt omgezet met marked in HTML.
+   response.render('artikel.liquid', {file: opgemaakt}) 
+})
+
+
+//slug is onderdeel van de url. je gebruikt: omdat je nog niet weet welke bestanden erin koment
  app.get('/experimenten', async function (request, response) {
    response.render('experimenten.liquid') 
 })
