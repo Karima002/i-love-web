@@ -1,0 +1,46 @@
+{% render 'partials/headsprint.liquid', title: "sprint 8" %}
+
+<body>
+    <header>
+        <h1> Learning log</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 100">
+            <defs>
+              <style>
+                .cls-1, .cls-2 {
+                  fill: #fff8f3;
+                }
+          
+                .cls-2 {
+                  font-family: Gabriola, Gabriola;
+                  font-size: 72px;
+                }
+              </style>
+            </defs>
+            <!-- Generator: Adobe Illustrator 28.7.2, SVG Export Plug-In . SVG Version: 1.2.0 Build 154)  -->
+            <g>
+              <g id="Layer_1">
+                <text class="cls-2" transform="translate(829.68 71.11)"><tspan x="0" y="0">I love web</tspan></text>
+                <rect class="cls-1" y="46" width="812" height="9"/>
+                <rect class="cls-1" x="1078" y="45" width="812" height="9"/>
+              </g>
+            </g>
+          </svg>
+    </header> 
+
+
+    <main>
+        <h2>Sprint 8: Server-Side renderen</h2>
+
+        <section>
+            <article>
+                {% for file in files %}
+                    <a href="/sprint9/{{ file | slice:0, -3}}">{{ file | slice:0, -3}}</a>
+                    <!-- Met slice haal je de laatste 3 karakters weg, in dit geval .md. -->
+                {% endfor %}
+            </article>
+        <section>
+
+    {% comment %} {{ files | json }} {% endcomment %}
+
+    <!-- Met | geef je een liquid filter aan -->
+    </main>
