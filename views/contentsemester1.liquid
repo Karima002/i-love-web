@@ -1,0 +1,21 @@
+{% render 'partials/headsprint.liquid'%}
+{% render 'partials/header.liquid', title: "sprint 9" %}
+
+<body>
+ 
+
+    <main>
+        <h2>Overzicht learning journal semester 1</h2>
+
+        <section>
+          {% for file in files %}
+            <article>
+                    <a href="/content-semester-1/{{ file | slice:0, -3}}">{{ file | slice:0, -3}}</a>
+                    <!-- Met slice haal je de laatste 3 karakters weg, in dit geval .md. -->
+            </article>
+          {% endfor %}
+        <section>
+
+    {% comment %} {{ files | json }} {% endcomment %}
+
+    </main>
