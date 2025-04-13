@@ -1,3 +1,8 @@
+---
+Title: "Connect your tribe - sprint 1"
+Author: "Karima"
+Date: "3 september 2024"
+---
 **Schrijf in je Learning Journal kort op wat je vandaag hebt gedaan.**  
 Allereerst kregen we een workshop over webtechnologie over het web, HTML, CSS en JS. Het ging de basis principes van CSS, HTML en JS. Vervolgens gingen we aan de slag met HTML elementen en CSS selectors.
 
