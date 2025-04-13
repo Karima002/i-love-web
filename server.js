@@ -90,6 +90,24 @@ app.get('/content-semester-1/:slug', async function (request, response) {
       date: data.date || 'Datum nader te bepalen '
    }) 
 })
+app.get('/sprint10', async function (request, response) {
+   const files = (await readdir('content')).filter(file => file.startsWith('sprint10_')); // Alleen de nieuwe Markdown-bestanden laden die starten met 'sprint10_'
+
+   response.render('sprint10.liquid', { files: files });
+});
+
+app.get('/sprint10/:slug', async function (request, response) {
+   const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' }) 
+   const opgemaakt = marked.parse(fileContents) 
+   const { content, data } = matter(fileContents);
+      response.render('artikel.liquid', {
+      file: opgemaakt,
+      title: data.title,
+      author: data.author || 'Onbekend',
+      date: data.date || 'Datum nader te bepalen '
+   }) 
+})
+
 
 
 //slug is onderdeel van de url. je gebruikt: omdat je nog niet weet welke bestanden erin koment
