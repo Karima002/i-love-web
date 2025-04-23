@@ -75,6 +75,7 @@ app.get('/sprint1', async function (request, response) {
     response.render('sprint8.liquid') 
  })
 
+
  app.get('/content-semester-1', async function (request, response) {
    response.render('contentsemester1.liquid', {files: files}) 
 })
@@ -92,7 +93,6 @@ app.get('/content-semester-1/:slug', async function (request, response) {
 })
 app.get('/sprint10', async function (request, response) {
    const files = (await readdir('content')).filter(file => file.startsWith('sprint10_')); // Alleen de nieuwe Markdown-bestanden laden die starten met 'sprint10_'
-
    response.render('sprint10.liquid', { files: files });
 });
 
