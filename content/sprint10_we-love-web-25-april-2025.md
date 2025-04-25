@@ -45,6 +45,6 @@ Nesten NOSCRIPT
 - AL hetgeen onder het eerste noscript wordt als niets gezien
 - noscript stylen werk niet.
 - 'niet renderen'  is de enige functie van de noscript tag
-- script in noscript? Dit gaat ook niet werken.
+- script in noscript? Dit gaat ook niet werken. 
 
 ![We-love-web-college](../assets/lov.jpg)
