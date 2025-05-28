@@ -127,8 +127,8 @@ app.get('/sprint11/:slug', async function (request, response) {
 })
 
 app.get('/sprint12', async function (request, response) {
-   const files = (await readdir('content')).filter(file => file.startsWith('sprint10_')); // Alleen de nieuwe Markdown-bestanden laden die starten met 'sprint10_'
-   response.render('sprint10.liquid', { files: files });
+   const files = (await readdir('content')).filter(file => file.startsWith('sprint12_')); // Alleen de nieuwe Markdown-bestanden laden die starten met 'sprint10_'
+   response.render('sprint12.liquid', { files: files });
 });
 
 app.get('/sprint12/:slug', async function (request, response) {
