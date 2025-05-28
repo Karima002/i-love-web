@@ -1,17 +1,103 @@
+
 # Webinar: Hoe toegankelijk is jouw digitale omgeving?
-Digitale toegankelijkheid na de European Accessibility Act (inwerkingtreding 28 juni 2025)
+#### Digitale toegankelijkheid na de European Accessibility Act (inwerkingtreding 28 juni 2025)
 
 💡Programma 
-1. Wat is de European Accessibility Act (EAA)?
-2. Welke organisaties vallen er onder de EAA?
-3. Welke risico's loop je wanneer je niet handelt naar de EAA?
-4. Hoe bereidt jij je voor om te voldoen aan de EAA?
-5. De voordelen van jouw digitaal toegankelijke omgevingen
-6. Praktische tips en voorbeelden 
-7. Q&A
+1. Introductie
+2. Digitale toegankelijkheid en WCAG
+3. European Accessibility Act (EAA)
+4. Voordelen
+5. Wat kan jij doen?
+6. Q&A
 
 
-..
+## Introductie
+Welkom bij Unc Inc
+ Wij zijn ontwerpers en ontwikkelaars. Samen met onze partners en hun gebruikers maken wij digitale oplossingen die mensen bij elkaar brengen. Wij geloven dat samenwerking cruciaal is voor het oplossen van de urgente uitdagingen van onze tijd. Onze digitale platformen, applicaties en websites zijn speciaal ontworpen om dergelijke samenwerkingen te faciliteren, zodat iedereen actief kan bijdragen aan positieve maatschappelijke veranderingen.
+
+
+#### Kernwaarden
+- De waarheid ligt bij de eindgebruiker: We ontwikkelen producten die aansluiten  bij de behoeften van de gebruiker en die toegankelijk zijn voor iedereen
+-  Bewijzen is beter dan veronderstellen: We werken pragmatisch samen en testen prototypes snel, zodat we aannames valideren voordat we ontwikkelen.
+
+## Digitale toegankelijkheid & WCAG
+
+#### Probleemschetsen
+Het internet zou voor iedereen moet zijn maar is dat niet overal het geval.
+
+Nutsbedrijf: Mijn omgeving
+ → Meterstanden doorgeven: mensen die niet kunnen zien of hun muis niet kunnen gebruiken zou je de toggle niet makkelijk kunnen gebruiken
+ → Termijnbedrag wijzigen 
+
+Museum: Onlineticketshop
+ → Datumselectie
+ → Betalingsproces
+
+Geestelijke gezondheidszorg: Cliëntenportaal
+ → Afsprakenplanner
+ → Zelfhulp apps
+
+#### Wat is een beperking?
+Een mismatch tussen iemands mogelijkheden en de omgeving waarin die persoon zich bevindt. Dit kan gaan om lichamelijke, zintuiglijke, cognitieve of tijdelijke beperkingen die invloed hebben op hoe iemand digitale content ervaart
+
+![injury's](../assets/image-1.PNG)
+
+
+####  Waarom is digitale toegankelijkheid belangrijk?
+![bevolking](../assets/image-2.PNG)
+
+#### Web Content Accessibility Guidelines (WCAG)
+Technische richtlijnen, 4 basisprincipes:
+
+ 1. Waarneembaar: Informatie moet door iedereen waargenomen kunnen worden.
+ 2. Bedienbaar: De website moet door iedereen te bedienen zijn.
+ 3. Begrijpelijk: Informatie en navigatie moeten voor iedereen begrijpelijk zijn.
+ 4. Robuust: Werkt op alle browsers en met verschillende hulptechnologieën.
+
+#### EAA: European Accessibility Act
+De European Accessibility Act komt eraan
+Vanaf 28 juni 2025 moet veel digitale diensten wettelijk 
+toegankelijk zijn – mogelijk ook jouw website! Begin op tijd: zo voorkom je tijdsdruk, verbeter je de gebruiksvriendelijkheid én toon je verantwoordelijkheid. Het wetsvoorstel is al in 2019 aangenomen. 
+
+
+#### Wat is het?
+Een Europese wet die bedrijven verplicht om bepaalde 
+producten en diensten, zoals websites, apps en 
+elektronische apparaten, toegankelijk te maken voor 
+mensen met een beperking.Daarvoor moeten platforms, websites en webshops voldoen aan de WCAG-richtlijnen op niveau AA. alles wat digitaal aangeboden wordt online moet voldoen aan het niveau AA (middenvorm van toegankelijk). AAA is optimaal toegankelijk en moeilijk om toe te passen.
+
+#### Voor wie geldt EAA?
+- De wet geldt voor bedrijven die online producten of 
+diensten aanbieden aan consumenten. Consumenten is een breed begrip, voorbeeld komt later
+- Specifiek: B2C-bedrijven met meer dan 10 medewerkers 
+of een jaaromzet boven de 2 miljoen euro. Business to consumer bedrijven die diensten of producten leveren aan consumenten. 
+- Het gaat om je website, mobiele apps én PDF’s
+
+#### Voorbeelden
+- Nieuwswebsites
+- Verkoop van producten en 
+diensten
+- Platforms met advertenties
+- Aanbieden van professionele 
+diensten (zoals artsen, 
+advocaten, makelaars, enz.)
+- Entertainment- en 
+mediadiensten, ook tv-streaming
+- Verkoop van 
+telecommunicatiedienste (verkoop van telefoonabbonementen)
+
+#### Wat gebeurt er als je niets doet?
+![gevolgen](../assets/image-3.PNG)
+
+#### Sancties van Autoriteit Consumenten Markt (ACM)
+Lidstaten van EU kunnen zelf de sancties invullen. In NL controleert ACM. 
+- Er kan een melding gemaakt worden bij de ACM*
+- Er kan een boete opgesteld worden. Hangt af van de hoeveelheid winst en de mate van niet-toegankelijk zijn. 
+- Daarna moet de kwestie ook  verbeterd worden (het naleven van de EAA). Achteraf herstellen kan veel tijd gaan kosten en is ook kostbaar.
+
+####  De voordelen van een toegankelijke website
+![voordelen](../assets/image-4.PNG)
+
 
 ## Wat kan jij doen?
 
@@ -105,3 +191,4 @@ De wet die in werking gaat treden (EAA) geldt dan voor commerciele bedrijven die
 - Het is een vorm van discriminatie. Een melding kan worden gemaakt bij het college voor de rechten van de mens. 
 
 
+Bron: https://www.youtube.com/watch?v=JxNcAQ2cC9A&t=6s&ab_channel=UncInc
