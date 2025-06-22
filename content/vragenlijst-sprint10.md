@@ -77,10 +77,10 @@ __21. Ik weet hoe perceived performance invloed heeft op de beleving van een geb
 - Percieved performance issue: https://github.com/Karima002/user-experience-enhanced-website-s10/issues/3
 
 __22. Ik kan UI states in meerdere lagen van progressive enhancement inzetten om de UX te verbeteren__
-- 2pnt
+- 1pnt
 
 __23. Ik kan een UI leuker en prettiger maken, zonder de core functionaliteit uit het oog te verliezen__
-- 2pnt
+- 1pnt
 
 __24. Ik kan scroll-driven animations inzetten om de UI beter te maken__
 - Opnt
