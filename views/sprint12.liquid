@@ -1,0 +1,17 @@
+{% render 'partials/headsprint.liquid'%}
+{% render 'partials/header.liquid', title: "sprint 9" %}
+
+<body>
+ 
+
+    <main>
+        <h2>Sprint 12: Proof of concept</h2>
+
+        <section>
+          {% for file in files %}
+            <article>
+                    <a href="/sprint12/{{ file | slice:0, -3}}">{{ file | slice:0, -3}}</a>
+            </article>
+          {% endfor %}
+        </section>
+    </main>

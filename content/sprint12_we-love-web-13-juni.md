@@ -66,7 +66,6 @@ largest emitter between Mexico and Brazil
 - Simplify image
 - Use image compression
 
-<img src="" alt="" loading="lazy" />
 
 ### Reduce assets (especially JavaScript)
 - css-tricks.com/reduce-your-websites-environmental-impact-with-a-carbon-budget
@@ -146,3 +145,5 @@ hidde.blog/the-web-is-fast-by-default-lets-keep-it-fast: waarom is de website va
 - Choose green hosting
 - Only necessary features (probably avoid AI)
 - Use greener CSS
+
+![weloveweb](../assets/welovewebjuni.jpeg)
