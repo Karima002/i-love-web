@@ -4,24 +4,25 @@
     box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .scroll-bar {
+        height: .6em;
+        position: fixed;
+        top: 0;
+        background-color: darkblue;
+        width: 100%;
+        z-index: 1;
+        transform-origin: left;
+        scale: 0 1;
 
-.scroll-bar {
-    height: .6em;
-    position: fixed;
-    top: 0;
-    background-color: darkblue;
-    width: 100%;
-    z-index: 1;
-    transform-origin: left;
-    scale: 0 1;
-
-    animation: scroll linear;
-    animation-timeline: scroll(y);
-}
- 
-@keyframes scroll {
-    to {
-        scale: 1 1;
+        animation: scroll linear;
+        animation-timeline: scroll(y);
+    }
+    
+    @keyframes scroll {
+        to {
+            scale: 1 1;
+        }
     }
 }
 
@@ -71,24 +72,27 @@ p {
     font-family: "myriad-pro", sans-serif;
 }
 
-.image-container {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50vw;
-    height: 50vh;
-    animation: fade-in linear;
-    animation-timeline: view()  /*animatie begint bij het verschijnen in de viewport*/   
-}
-
-@keyframes fade-in {
-    from {
-        scale: 0.7;
-        opacity: 0;
+@media (prefers-reduced-motion: no-preference) {
+    .image-container {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50vw;
+        height: 50vh;
+        animation: fade-in linear;
+        animation-timeline: view();  /*animatie begint bij het verschijnen in de viewport*/   
     }
 
-    to {
-        scale: 1;
-        opacity: 1;
+    @keyframes fade-in {
+        from {
+            scale: 0.7;
+            opacity: 0;
+        }
+
+        to {
+            scale: 1;
+            opacity: 1;
+        }
     }
+
 }
