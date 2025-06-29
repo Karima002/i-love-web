@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .scroll-bar {
+        height: .6em;
+        position: fixed;
+        top: 0;
+        background-color: darkblue;
+        width: 100%;
+        z-index: 1;
+        transform-origin: left;
+        scale: 0 1;
+
+        animation: scroll linear;
+        animation-timeline: scroll(y);
+    }
+    
+    @keyframes scroll {
+        to {
+            scale: 1 1;
+        }
+    }
+}
+
+section {
+    position: relative;   
+}
+
+.main-content {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit 20em;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+     display: block;
+}
+
+h1 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.3rem;
+
+
+}
+
+.background {
+    padding: 0;
+    background-color: black;
+    color: white;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "myriad-pro", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .image-container {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50vw;
+        height: 50vh;
+        animation: fade-in linear;
+        animation-timeline: view();  /*animatie begint bij het verschijnen in de viewport*/   
+        animation-range: entry;
+    }
+
+    @keyframes fade-in {
+        from {
+            scale: 0.7;
+            opacity: 0;
+        }
+
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+    }
+}
+
+.h1-code {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.3rem;
+}
+
+.p-code {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+pre {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+ul {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: white;
+}
+
+li {
+    font-family: "myriad-pro", sans-serif;
+    max-width: 40em;
+    padding: .5em;
+}
+
+a {
+    color: white;
+}

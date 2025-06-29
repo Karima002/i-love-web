@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scrolldriven.css">
-    <title>Scroll driven animation</title>
-</head>
-<body>
+{% render 'partials/header-scroll.liquid', title: "Scroll Driven Animation" %}
+
     <main>
         <div class="scroll-bar"></div>
 
@@ -29,7 +22,6 @@
 
         <section >
             <div class="background"></div>
-        <article>
             <h1 class="h1-code">Scroll-Driven Animation on images (CSS Only)</h1>
             <p class="p-code">To create a smooth scroll-driven animation on the image, I used CSS features like <code>animation-timeline</code> and <code>view()</code>, which allow animations to be triggered based on the scroll position. <code>Animation-timeline</code> triggers animation when the element enters the viewport. Here is the CSS used specifically for the images:</p>
             <pre>
@@ -61,7 +53,21 @@
 
                 </code>
             </pre>
-            </article>
+        </section>
+
+        <section>
+            <div class="background"></div>
+            <h1 class="h1-code">Sources Used</h1>
+            <p class="p-code">While building this website, I relied on a few sources. Below is a list of the main resources I consulted:</p>
+            <ul>
+                <li>
+                    <a href="https://scroll-driven-animations.style/">Scroll-Driven-Animations</a>: For examples and explenation about scroll-driven animations.
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=5noL_qFobm0&list=PLNYkxOF6rcICM3ttukz9x5LCNOHfWBVnn">Youtube Chrome for developers</a>: For a playlist of Bramus van Damme explaining all about scroll-driven animations.
+                </li>
+            </ul>
         </section>
 
     </main>
