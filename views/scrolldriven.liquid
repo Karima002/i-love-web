@@ -4,7 +4,7 @@
         <div class="scroll-bar"></div>
 
         <section class="main-content">
-            <img src="../assets/img5.jpeg" alt="background image of buildings">
+            <img src="../assets/img10.jpeg" alt="background image of buildings">
             <h1>Scroll driven animation</h1>
         </section>
 
@@ -102,6 +102,15 @@
             {% endfor %}
         </section>
 
+        <script>
+            let interactionSpinner = document.querySelector('#submit-button')
+
+            interactionSpinner.addEventListener('click', rotate)
+
+            function rotate () {
+                interactionSpinner.classList.toggle('loader')
+            }
+        </script>
     </main>
     
     

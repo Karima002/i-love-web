@@ -56,7 +56,7 @@ img {
 
 h1 {
     position: absolute;
-    bottom: 50%;
+    bottom: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -202,6 +202,29 @@ form input[type="text"] {
         }
 
 }
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    color: transparent;
+    max-width: 13em;
+    border: 1px solid darkblue;
+    background-color: darkblue;
+    pointer-events: none; /* voorkomt extra clicks terwijl spinner actief is */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 
 .h1-sources {
     margin: 0; /* Verwijder standaard marges */
