@@ -84,19 +84,18 @@
 
                 <button  id="submit-button" class="submit-button" >Submit</button>
             </form>
+            
         </section>
 
 
 
-       <section>
+       <section class="section-source">
             <div class="background"></div>
             <h1 class="h1-sources">Sended Sources</h1>
             {% for source in links reversed %} <!-- De nieuwste berichten als eerste worden getoond -->
-                {% if forloop.index <= 3 %} <!-- Alleen objecten 1, 2 en 3 worden weergegeven -->
-                    <div class="source">
-                        <p>URL: {{ source.url }}</p> <!-- Hier wordt de URL weergegeven -->
-                        <p>Name: {{ source.title }}</p> <!-- Hier wordt de naam weergegeven -->
-                    </div>
+                {% if forloop.index <= 4 %} <!-- Alleen objecten 1, 2 en 3 worden weergegeven -->
+                    <p class="p-source-name">Name: {{ source.title }}</p> <!-- Hier wordt de naam weergegeven -->
+                    <p class="p-source-url">URL: {{ source.url }}</p> <!-- Hier wordt de URL weergegeven -->
                 {% else %}
                     {% break %} <!-- De rest van de berichten na object niet weergeven -->
                 {% endif %}
