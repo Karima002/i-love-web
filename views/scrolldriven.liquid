@@ -69,10 +69,10 @@
                 </li>
             </ul>
 
-            <section class="suggestions">            
+            <article class="suggestions">            
                 <h1>Suggestions for sroll driven animatons sources?</h1>
                 <p>Do you have a useful resource for scroll-driven animations? Share your suggestion with us by leaving your name!*</p>
-            </section>
+            </article>
 
             <form method="post" action="/scrolldriven">
                 
@@ -86,8 +86,21 @@
             </form>
         </section>
 
-        <section>
+
+
+       <section>
             <div class="background"></div>
+            <h1 class="h1-sources">Sended Sources</h1>
+            {% for source in links reversed %} <!-- De nieuwste berichten als eerste worden getoond -->
+                {% if forloop.index <= 3 %} <!-- Alleen objecten 1, 2 en 3 worden weergegeven -->
+                    <div class="source">
+                        <p>URL: {{ source.url }}</p> <!-- Hier wordt de URL weergegeven -->
+                        <p>Name: {{ source.title }}</p> <!-- Hier wordt de naam weergegeven -->
+                    </div>
+                {% else %}
+                    {% break %} <!-- De rest van de berichten na object niet weergeven -->
+                {% endif %}
+            {% endfor %}
         </section>
 
     </main>
