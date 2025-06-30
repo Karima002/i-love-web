@@ -31,15 +31,17 @@ section {
     position: relative;   
 }
 
-.main-content {
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range: exit 20em;
-}
+@media (prefers-reduced-motion: no-preference) {
+    .main-content {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range: exit 20em;
+    }
 
-@keyframes fade-out {
-    to {
-        opacity: 0;
+    @keyframes fade-out {
+        to {
+            opacity: 0;
+        }
     }
 }
 
